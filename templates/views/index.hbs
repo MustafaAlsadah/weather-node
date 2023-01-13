@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <style>
+        form{
+            padding: 10%;
+            background-color: antiquewhite;
+            border-radius: 3vw;
+        }
+        
+        #weather-res{
+            padding: 10%;
+            background-color: skyblue;
+            border-radius: 3vw;
+        }
+    </style>
+</head>
+<body>
+    {{>header}}
+    <form action="">
+        <label for="">Location</label>
+        <input id="location-input" type="text">
+        <button id="fetch-btn" type="button">Fetch weather</button>
+    </form>
+    <h1 id="weather-res"></h1>
+    {{>footer}}
+</body>
+    <script src="/js/clientsideJS.js"></script>
+
+</html>
