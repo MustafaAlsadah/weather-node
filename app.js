@@ -2,6 +2,7 @@ const path = require("path")
 const express = require("express")
 const hbs = require("hbs")
 const app = express()
+const port = process.env.PORT || 3000
 const {getWeather} = require("../weather app/utils/weather")
 
 //Define paths for Express.js config
@@ -65,6 +66,6 @@ app.get("*", (req, res)=>{ //Any URL that hasn't been matched above
     res.render("404", {errorMessage: "404. The psge you're looking for isn't found"})
 })
 
-app.listen(3000, () => {
-    console.log("Server is listening on port 3000...")
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}...`)
 })
