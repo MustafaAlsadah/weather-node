@@ -1,5 +1,3 @@
-console.log("Client side script!")
-
 const textField = document.querySelector("#location-input")
 const fetchBtn = document.querySelector("#fetch-btn")
 const forecastBox = document.querySelector("#weather-res")
