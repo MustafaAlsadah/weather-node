@@ -3,7 +3,7 @@ const express = require("express")
 const hbs = require("hbs")
 const app = express()
 const port = process.env.PORT || 3000
-const {getWeather} = require("../weather app/utils/weather")
+const {getWeather} = require("./weather app/utils/weather")
 
 //Define paths for Express.js config
 const publicDirectoryPath = path.join(__dirname, "./public")
